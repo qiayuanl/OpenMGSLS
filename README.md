@@ -1,0 +1,2 @@
+# OpenMGSLS
+Open source Mirror Galvanometer SLS 3D printer:A control program running on Arduino Due microcontrollers and supporting hardware, you can control the galvanometer G code common to CNC equipment, making galvanometer compatible with conventional slicing software can be used for SLS3D printing, and on this basis the development of the use of galvanometer motor Desktop SLS3D printer as an XY axis.
