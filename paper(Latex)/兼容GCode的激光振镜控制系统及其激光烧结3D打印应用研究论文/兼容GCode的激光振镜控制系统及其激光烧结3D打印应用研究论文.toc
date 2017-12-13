@@ -1,0 +1,46 @@
+\contentsline {section}{\numberline {1}前言}{3}
+\contentsline {subsection}{\numberline {1.1}激光打标}{3}
+\contentsline {subsubsection}{\numberline {1.1.1}振镜电机}{3}
+\contentsline {subsection}{\numberline {1.2}3D打印}{3}
+\contentsline {subsubsection}{\numberline {1.2.1}3D打印机原理概述}{3}
+\contentsline {paragraph}{建模}{3}
+\contentsline {paragraph}{分层}{4}
+\contentsline {paragraph}{路径及GCode生成}{4}
+\contentsline {subsubsection}{\numberline {1.2.2}常见3D打印机成型原理细分}{4}
+\contentsline {paragraph}{熔融沉积成型(Fused deposition modeling, FDM)}{4}
+\contentsline {subparagraph}{优点}{4}
+\contentsline {subparagraph}{缺点}{4}
+\contentsline {paragraph}{选择性激光烧结(Selective Laser Sintering,SLS)}{5}
+\contentsline {subparagraph}{优点}{5}
+\contentsline {subparagraph}{缺点}{5}
+\contentsline {subsection}{\numberline {1.3}同类项目}{5}
+\contentsline {subsubsection}{\numberline {1.3.1}现存桌面级SLS3D打印机}{5}
+\contentsline {paragraph}{OpenSLS项目}{5}
+\contentsline {subsection}{\numberline {1.4}本项目简介}{6}
+\contentsline {paragraph}{选题动机}{6}
+\contentsline {paragraph}{目标}{6}
+\contentsline {section}{\numberline {2}控制理论}{6}
+\contentsline {subsection}{\numberline {2.1}振镜扫描控制}{6}
+\contentsline {subsubsection}{\numberline {2.1.1}单轴振镜电机直线扫描控制}{6}
+\contentsline {paragraph}{条件}{6}
+\contentsline {subparagraph}{正运动学:}{6}
+\contentsline {subparagraph}{逆运动学:}{6}
+\contentsline {paragraph}{控制要求}{6}
+\contentsline {subparagraph}{输入:}{6}
+\contentsline {subparagraph}{输出:}{6}
+\contentsline {paragraph}{控制函数}{6}
+\contentsline {subsubsection}{\numberline {2.1.2}双轴振镜电机组平面扫描控制}{7}
+\contentsline {paragraph}{条件}{7}
+\contentsline {subparagraph}{正运动学:}{7}
+\contentsline {subparagraph}{逆运动学:}{7}
+\contentsline {paragraph}{控制要求}{7}
+\contentsline {subparagraph}{输入:}{7}
+\contentsline {subparagraph}{输出:}{7}
+\contentsline {paragraph}{控制函数}{7}
+\contentsline {subsubsection}{\numberline {2.1.3}双轴振镜电机误差分析}{7}
+\contentsline {paragraph}{条件}{7}
+\contentsline {section}{\numberline {3}结果}{8}
+\contentsline {section}{\numberline {4}讨论}{8}
+\contentsline {section}{\numberline {5}结论}{9}
+\contentsline {section}{\numberline {6}致谢}{9}
+\contentsline {section}{\numberline {7}参考文献}{10}
