@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.12.9)  13 DEC 2017 18:59
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.12.9)  17 DEC 2017 13:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1277,32 +1277,32 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 (./兼容GCode的激光振镜控制系统及其激光烧结3D打印应用研究论文.aux)
 \openout1 = `兼容GCode的激光振镜控制系统及其激光烧结3D打印应用研究论文.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 19.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 19.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 18.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 18.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    ... okay on input line 18.
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 19.
+LaTeX Info: Redefining \selectfont on input line 18.
 .................................................
 . fontspec info: "setup-math"
 . 
@@ -1310,57 +1310,57 @@ LaTeX Info: Redefining \selectfont on input line 19.
 .................................................
 \symlegacymaths=\mathgroup7
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 19.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 19.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 19.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 19.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 19.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 19.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 19.
-LaTeX Font Info:    Redeclaring math accent \check on input line 19.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 19.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 19.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 19.
-LaTeX Font Info:    Redeclaring math symbol \colon on input line 19.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 19.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 19.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 19.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 19.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 19.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 19.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 19.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 19.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 19.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 19.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 19.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 19.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 19.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 18.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 18.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 18.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 18.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 18.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 18.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 18.
+LaTeX Font Info:    Redeclaring math accent \check on input line 18.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 18.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 18.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 18.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 18.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 18.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 18.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 18.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 18.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 18.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 18.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 18.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 18.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 18.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 18.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 18.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 18.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 18.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 19.
+(Font)              `operators' in the math version `normal' on input line 18.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 19.
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 18.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 19.
+(Font)              `operators' in the math version `bold' on input line 18.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 19.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 18.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 19.
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 18.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 19.
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 18.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 19.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 18.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 19.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 18.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 19.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 18.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/lmr/m/n --> TU/lmr/bx/n on input line 19.
+(Font)                  TU/lmr/m/n --> TU/lmr/bx/n on input line 18.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/lmr/bx/it on input line 19.
+(Font)                  OT1/cmr/bx/it --> TU/lmr/bx/it on input line 18.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 19.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 18.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 19.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 18.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1400,9 +1400,9 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfigure package is loaded.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 20.
+(Font)              <14.4> on input line 19.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 20.
+(Font)              <7> on input line 19.
 
 LaTeX Warning: No \author given.
 
@@ -1457,7 +1457,7 @@ File: MG0.jpg Graphic file (type QTm)
 File: MG1.jpg Graphic file (type QTm)
 
 <use  "MG1.jpg" >
-Overfull \hbox (0.38806pt too wide) in paragraph at lines 41--54
+Overfull \hbox (0.38806pt too wide) in paragraph at lines 40--53
 \TU/STSong(0)/m/n/12 物 质 表 面 打 上 永 久 的 标 记 的 过 程 的 统 称\TU/lmr/m/n/12 , \TU/STSo
 ng(0)/m/n/12 电
  []
@@ -1478,18 +1478,18 @@ File: FDM2.jpg Graphic file (type QTm)
  <use  "FDM2.jpg" >
 File: FDM3.png Graphic file (type QTm)
  <use  "FDM3.png" >
-Underfull \hbox (badness 10000) in paragraph at lines 100--114
+Underfull \hbox (badness 10000) in paragraph at lines 99--113
 
  []
 
 File: SLS0.jpg Graphic file (type QTm)
 <use  "SLS0.jpg" >
-Overfull \hbox (1.58406pt too wide) in paragraph at lines 115--121
+Overfull \hbox (1.58406pt too wide) in paragraph at lines 114--120
 \TU/lmr/bx/n/12 tering,SLS)[] \TU/STSong(0)/m/n/12 选 择 性 激 光 烧 结 使 用 激 光 将
  []
 
 [4]
-Overfull \hbox (25.85747pt too wide) in paragraph at lines 127--128
+Overfull \hbox (25.85747pt too wide) in paragraph at lines 126--127
 []\TU/STSong(0)/m/n/12 现 存 的 桌 面 级 \TU/lmr/m/n/12 SLS3D \TU/STSong(0)/m/n/12 打 
 印 机 都 是 在 \TU/lmr/m/n/12 FDM3D
  []
@@ -1498,7 +1498,7 @@ File: OpenSLS0.png Graphic file (type QTm)
 <use  "OpenSLS0.png" >
 File: OpenSLS1.png Graphic file (type QTm)
  <use  "OpenSLS1.png" >
-Overfull \hbox (0.38806pt too wide) in paragraph at lines 129--137
+Overfull \hbox (0.38806pt too wide) in paragraph at lines 128--136
 \TU/STSong(0)/m/n/12 项 目 的 研 究 的 主 要 方 向 为 粉 末 烧 结 材 料\TU/lmr/m/n/12 , \TU/STSo
 ng(0)/m/n/12 是
  []
@@ -1516,17 +1516,19 @@ File: MG5.png Graphic file (type QTm)
 File: MG6.png Graphic file (type QTm)
  <use  "MG6.png" > [7
 
-] [8] [9] [10
+]
+File: MG7.png Graphic file (type QTm)
+ <use  "MG7.png" > [8] [9] [10
 
 ]
 (./兼容GCode的激光振镜控制系统及其激光烧结3D打印应用研究论文.aux) ) 
 Here is how much of TeX's memory you used:
- 20934 strings out of 493005
- 425335 string characters out of 6134596
+ 20926 strings out of 493005
+ 424748 string characters out of 6134596
  468387 words of memory out of 5000000
- 24718 multiletter control sequences out of 15000+600000
+ 24709 multiletter control sequences out of 15000+600000
  13096 words of font info for 67 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 57i,7n,67p,10459b,358s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 57i,8n,67p,10459b,358s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on 兼容GCode的激光振镜控制系统及其激光烧结3D打印应用研究论文.pdf (10 pages).

@@ -1,5 +1,4 @@
 \documentclass[a4paper,12pt,onecolumn,twoside]{article}
-
 %%package
 \usepackage[UTF8, heading = false, scheme = plain]{ctex} %中文支持
 \usepackage{fancyhdr}
@@ -121,7 +120,7 @@
 \subparagraph{优点}
 SLS主要用于工业3D打印应用,激光烧结技术可以使用非常多的粉末材料,并制成相应材质的成品SLS广泛用于生产功能原型和零件以及一些最终产品. 激光烧结的最大优点是几乎完全的设计自由度; 过量的未熔化粉末在其生产时用作结构的支撑,这允许制造复杂的结构,而不需要像FDM SLA DLP等构建额外的支撑.
 \subparagraph{缺点}
-技术十分复杂,需要较大功率激光,桌面级的SLS3D打印机只少量存在于高校或团队（后文会说明区别).
+技术十分复杂,需要较大功率激光,桌面级的SLS3D打印机只少量存在于高校或团队. 
 \subsection{同类项目}
 \subsubsection{现存桌面级SLS3D打印机}
 现存的桌面级SLS3D打印机都是在FDM3D打印机(或者激光切割机)基础上改装而成,XY轴都是使用步进电机+同步带或丝杠的方式拖着激光器进行直线运动,这种机构的最大运动速度只能到达200mm/s左右.
@@ -162,11 +161,11 @@ SLS主要用于工业3D打印应用,激光烧结技术可以使用非常多的�
 \end{figure}
 \subparagraph{正运动学:}
 \begin{equation}
-x=\frac{d}{tan(\alpha)} 
+x=d\tan2\alpha 
 \end{equation}
 \subparagraph{逆运动学:}
 \begin{equation}
-\alpha = arctan(x/d)
+\alpha =\frac{1}{2}\arctan\frac{x}{d}
 \end{equation}
 \paragraph{控制要求}
 \subparagraph{输入:}
@@ -175,7 +174,7 @@ x=\frac{d}{tan(\alpha)}
 反射镜偏角$\theta$
 \paragraph{控制函数}即逆运动学
 \begin{equation}
-f(x)=2\theta = arctan(x/d)
+f(x)=\theta =\frac{1}{2} \arctan\frac{x}{d}
 \end{equation}
 \clearpage
 \subsubsection{双轴振镜电机组平面扫描控制}
@@ -184,7 +183,7 @@ f(x)=2\theta = arctan(x/d)
 如果简单地使用单轴振镜电机的控制方法
 
 \begin{figure}[htbp]
-\includegraphics[width=\linewidth]{MG4.png}
+\includegraphics[width=1\linewidth]{MG4.png}
 \caption{双轴振镜电机组示意图}
 \end{figure}
 
@@ -192,17 +191,17 @@ f(x)=2\theta = arctan(x/d)
 \begin{equation}
 \left\{
 \begin{array}{c}
-x=\frac{d}{tan(2\theta_x)} \\
-y=\frac{d}{tan(2\theta_y)} 
+x=d\tan2\theta_x \\
+y=d\tan2\theta_y\\ 
 \end{array}
 \right.
 \end{equation}
 \subparagraph{逆运动学:}
 \begin{equation}
 \left\{
-\begin{array}{c}
-2\theta_x = arctan(x/d)  \\
-2\theta_y =  arctan(y/d) \\
+\begin{array}{l}
+2\theta_x = \arctan\frac{x}{d}  \\
+2\theta_y = \arctan\frac{y}{d} \\
 \end{array}
 \right.
 \end{equation}
@@ -215,22 +214,22 @@ x轴振镜反射镜偏角$\theta_x$ , y轴振镜反射镜偏角$\theta_y$
 \begin{equation}
 f(x,y)=
 \left\{
-\begin{array}{c}
-2\theta_x = arctan(x/d)  \\
-2\theta_y =  arctan(y/d) \\
+\begin{array}{l}
+\theta_x = \frac{1}{2}\arctan\frac{x}{d}  \\
+\theta_y = \frac{1}{2}\arctan\frac{y}{d} \\
 \end{array}
 \right.
 \end{equation}
 但是如果使用这种控制方式,y轴将会产生枕型失真.
-\begin{figure}[htbp]
+\begin{figure}[ht]
+\centering
 \includegraphics[width=\linewidth]{MG5.png}
-\caption{扫描正方形图案时,出现y轴向原点方向1内凹}
+\caption{扫描正方形图形的枕型失真}
 \end{figure}
 \newpage
-\subsubsection{双轴振镜电机误差分析}
-使用单轴的控制方式控制双轴的振镜组,没有考虑到两个振镜的距离
+使用上述控制方式控制双轴的振镜组,没有考虑到两个振镜的距离
 \paragraph{条件}
-设$x$振镜和$y$振镜反射镜中轴之间的距离为$e$,$y$振镜的轴线到扫描平面坐标原点的距离为d,当$x$,$y$轴的光学偏转角分别为$\theta_x$和$\theta_y$时,扫描平面上相应激光斑坐标为$(x,y)$,当$\theta_x=\theta_y=0$时,$x=y=0$.
+设$x$振镜和$y$振镜反射镜中轴之间的距离为$e$,$y$振镜的轴线到扫描平面坐标原点的距离为d,当$x$,$y$轴的光学偏转角分别为$\theta_x$和$\theta_y$时,扫描平面上相应激光斑坐标为$(x,y)$,当$\theta_x=\theta_y=0$时,
 \begin{figure}[htbp]
 \includegraphics[width=\linewidth]{MG6.png}
 \caption{双轴振镜电机组示意图}
@@ -238,23 +237,43 @@ f(x,y)=
 \subparagraph{正运动学:}
 \begin{equation}
 \left\{
-\begin{array}{c}
-x=\frac{d}{tan(2\theta_x)} \\
-y=\frac{d}{tan(2\theta_y)} 
+\begin{array}{l}
+x=(e+\sqrt{d^2+y^2})\tan 2\theta_x \\
+y=d\tan 2\theta_y \\
 \end{array}
 \right.
 \end{equation}
 \subparagraph{逆运动学:}
 \begin{equation}
 \left\{
-\begin{array}{c}
-\theta_x = arctan(x/d)  \\
-\theta_y =  arctan(y/d) \\
+\begin{array}{l}
+2\theta_x = \arctan \frac{x}{e+\sqrt{d^2+y^2}}  \\
+2\theta_y = \arctan \frac{y}{d} \\
 \end{array}
 \right.
 \end{equation}
-
+可见,双轴振镜组的运动学模型是复杂的非线性模型.
 \newpage
+\subsubsection{双轴振镜电机失真分析}
+\paragraph{失真产生}
+使用单轴扫描方式控制双轴振镜组扫描垂直于x轴的直线时,$\theta_x$不变,设常数$c=2\tan\theta_x$
+由$(7)$可得
+\begin{equation}
+\frac{(x-ce)^2}{c^2 d^2}-\frac{y^2}{d^2}=1
+\end{equation}
+显然$(9)$描述的曲线为双曲线\\
+定义$\varepsilon$为误差 $x_0$为预期位置$x$为实际位置,可见当$e$和$x_0$越大时,x轴偏移$\varepsilon$将越大
+\begin{equation}
+\varepsilon=x-x_0=(e+\sqrt{d^2+e^2})\tan2\theta_x
+\end{equation}
+\paragraph{验证}
+使用Matlab软件仿真扫描,当$e=5mm$,$d=200mm$扫描长宽为$50mm$的正方形图案\\
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{MG7.png}
+\caption{Matlab仿真结果,橙色为预期图形,蓝色为实际扫描图形}
+\end{figure}
+
 %结果
 \section{结果}
 
