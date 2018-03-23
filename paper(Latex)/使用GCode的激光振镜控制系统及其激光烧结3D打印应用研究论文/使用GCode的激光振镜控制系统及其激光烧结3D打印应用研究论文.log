@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.12.9)  20 DEC 2017 23:48
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.12.9)  5 FEB 2018 08:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1872,9 +1872,9 @@ Overfull \hbox (1.58406pt too wide) in paragraph at lines 118--124
  []
 
 [4]
-Overfull \hbox (25.85747pt too wide) in paragraph at lines 130--131
+Overfull \hbox (11.00125pt too wide) in paragraph at lines 130--131
 []\TU/STSong(0)/m/n/12 现 存 的 桌 面 级 \TU/lmr/m/n/12 SLS3D \TU/STSong(0)/m/n/12 打 
-印 机 都 是 在 \TU/lmr/m/n/12 FDM3D
+印 机 都 是 在 \TU/lmr/m/n/12 FDM
  []
 
 File: OpenSLS0.png Graphic file (type QTm)
