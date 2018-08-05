@@ -1,0 +1,157 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        03/12/2014  21:29:26  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+D:\PROGRAM FILES\KEIL\C51\BIN\BL51.EXE DAC8552.obj TO DAC8552 RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL WITH FLOATING POINT ARITHMETIC
+
+
+INPUT MODULES INCLUDED:
+  DAC8552.obj (DAC8552)
+  D:\PROGRAM FILES\KEIL\C51\LIB\C51FPS.LIB (?C?FPMUL)
+  D:\PROGRAM FILES\KEIL\C51\LIB\C51FPS.LIB (?C?FPDIV)
+  D:\PROGRAM FILES\KEIL\C51\LIB\C51FPS.LIB (?C?CASTF)
+  D:\PROGRAM FILES\KEIL\C51\LIB\C51FPS.LIB (?C?FPGETOPN)
+  D:\PROGRAM FILES\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+  D:\PROGRAM FILES\KEIL\C51\LIB\C51S.LIB (?C?LNEG)
+
+
+LINK MAP OF MODULE:  DAC8552 (DAC8552)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0008H     UNIT         _DATA_GROUP_
+            IDATA   0010H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     0235H     UNIT         ?C?LIB_CODE
+            CODE    0238H     003AH     UNIT         ?PR?_WRITE_DAC8552?DAC8552
+            CODE    0272H     0032H     UNIT         ?PR?_VOLTAGE_CONVERT?DAC8552
+            CODE    02A4H     0027H     UNIT         ?PR?MAIN?DAC8552
+            CODE    02CBH     000CH     UNIT         ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   DAC8552 (DAC8552)
+
+
+SEGMENT                                DATA_GROUP 
+  +--> CALLED SEGMENT                START    LENGTH
+----------------------------------------------------
+?C_C51STARTUP                        -----    -----
+  +--> ?PR?MAIN?DAC8552
+
+?PR?MAIN?DAC8552                     -----    -----
+  +--> ?PR?_VOLTAGE_CONVERT?DAC8552
+  +--> ?PR?_WRITE_DAC8552?DAC8552
+
+?PR?_VOLTAGE_CONVERT?DAC8552         0008H    0008H
+
+
+
+SYMBOL TABLE OF MODULE:  DAC8552 (DAC8552)
+
+  VALUE           TYPE          NAME
+BL51 BANKED LINKER/LOCATER V6.22                                                      03/12/2014  21:29:26  PAGE 2
+
+
+  ----------------------------------
+
+  -------         MODULE        DAC8552
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  C:0238H         PUBLIC        _Write_DAC8552
+  C:027BH         PUBLIC        _Voltage_Convert
+  C:02A4H         PUBLIC        main
+  B:0080H.1       PUBLIC        DAC8552_SCLK
+  B:0080H.2       PUBLIC        DAC8552_SYNC
+  B:0080H.0       PUBLIC        DAC8552_DIN
+  -------         PROC          MAIN
+  C:02A4H         LINE#         29
+  C:02A4H         LINE#         30
+  C:02A4H         LINE#         31
+  C:02B7H         LINE#         32
+  -------         ENDPROC       MAIN
+  -------         PROC          _WRITE_DAC8552
+  D:0007H         SYMBOL        Command
+  D:0004H         SYMBOL        Data
+  -------         DO            
+  D:0003H         SYMBOL        i
+  -------         ENDDO         
+  C:0238H         LINE#         42
+  C:0238H         LINE#         43
+  C:0238H         LINE#         46
+  C:023AH         LINE#         47
+  C:023CH         LINE#         49
+  C:023EH         LINE#         50
+  C:023EH         LINE#         51
+  C:0240H         LINE#         52
+  C:0244H         LINE#         53
+  C:0244H         LINE#         54
+  C:0246H         LINE#         55
+  C:0248H         LINE#         57
+  C:0248H         LINE#         58
+  C:024AH         LINE#         59
+  C:024AH         LINE#         60
+  C:024CH         LINE#         61
+  C:0250H         LINE#         62
+  C:0254H         LINE#         64
+  C:0256H         LINE#         65
+  C:0256H         LINE#         66
+  C:0258H         LINE#         67
+  C:025CH         LINE#         68
+  C:025CH         LINE#         69
+  C:025EH         LINE#         70
+  C:0260H         LINE#         72
+  C:0260H         LINE#         73
+  C:0262H         LINE#         74
+  C:0262H         LINE#         75
+  C:0264H         LINE#         76
+  C:026BH         LINE#         77
+  C:026FH         LINE#         78
+  C:0271H         LINE#         79
+  -------         ENDPROC       _WRITE_DAC8552
+  -------         PROC          L?0014
+BL51 BANKED LINKER/LOCATER V6.22                                                      03/12/2014  21:29:26  PAGE 3
+
+
+  -------         ENDPROC       L?0014
+  -------         PROC          _VOLTAGE_CONVERT
+  D:0008H         SYMBOL        Vref
+  D:000CH         SYMBOL        voltage
+  -------         DO            
+  D:0006H         SYMBOL        _D_
+  -------         ENDDO         
+  C:027BH         LINE#         88
+  C:0283H         LINE#         89
+  C:0283H         LINE#         91
+  C:02A3H         LINE#         93
+  C:02A3H         LINE#         94
+  -------         ENDPROC       _VOLTAGE_CONVERT
+  -------         ENDMOD        DAC8552
+
+  -------         MODULE        ?C?FPMUL
+  C:0003H         PUBLIC        ?C?FPMUL
+  -------         ENDMOD        ?C?FPMUL
+
+  -------         MODULE        ?C?FPDIV
+  C:010CH         PUBLIC        ?C?FPDIV
+  -------         ENDMOD        ?C?FPDIV
+
+  -------         MODULE        ?C?CASTF
+  C:01A9H         PUBLIC        ?C?CASTF
+  -------         ENDMOD        ?C?CASTF
+
+  -------         MODULE        ?C?LNEG
+  C:022AH         PUBLIC        ?C?LNEG
+  -------         ENDMOD        ?C?LNEG
+
+Program Size: data=17.0 xdata=0 code=727
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,12 @@
+Version Information
+版本信息
+
+Reconstruct the program 
+重构程序框架
+
+Optimize serial port reception
+优化串口接收
+
+Accurate control of the galvanometer speed is performed using the duetimer.h
+使用duetimer库进行对振镜速度精确控制
+

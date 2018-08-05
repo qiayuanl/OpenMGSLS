@@ -1,0 +1,5 @@
+Version Information
+版本信息
+
+G代码N行数及*checksum校检 
+DAVal数组由动态改为静态 解决了打印途中死机现象

@@ -1,0 +1,6 @@
+{
+    "terminal.integrated.env.osx": {
+        "PATH": "/Users/liaoqiayuan/.platformio/penv/bin:/Users/liaoqiayuan/.platformio/penv:/Library/Frameworks/Python.framework/Versions/3.6/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Users/liaoqiayuan/Desktop/platform-tools/",
+        "PLATFORMIO_CALLER": "vscode"
+    }
+}

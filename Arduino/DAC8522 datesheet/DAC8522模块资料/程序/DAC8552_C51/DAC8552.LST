@@ -1,0 +1,122 @@
+C51 COMPILER V9.00   DAC8552                                                               03/12/2014 21:29:26 PAGE 1   
+
+
+C51 COMPILER V9.00, COMPILATION OF MODULE DAC8552
+OBJECT MODULE PLACED IN DAC8552.OBJ
+COMPILER INVOKED BY: D:\Program Files\Keil\C51\BIN\C51.EXE DAC8552.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          /******************************************************************************
+   2                                            DAC8552模块
+   3          
+   4                          功能：DAC8552双路输出电压
+   5          
+   6                          硬件原理图：
+   7                        P0.0    -->   DAC8552_DIN
+   8                        P0.1    -->   DAC8552_SCLK
+   9                        P0.2    -->   DAC8552_SYNC
+  10          
+  11                          Time：2012、10、1
+  12                          By：梦想电子工作室
+  13                          shop：mcu-dream.taobao.com
+  14          
+  15          ******************************************************************************/
+  16          
+  17          #include <reg51.h>
+  18          
+  19          #define uchar unsigned char
+  20          #define uint unsigned int
+  21          
+  22          sbit DAC8552_DIN  = P0^0;                       /***********************************需要修改**********************************
+             -*********/
+  23          sbit DAC8552_SCLK = P0^1;                       /***********************************需要修改*********************************
+             -**********/
+  24          sbit DAC8552_SYNC = P0^2;                       /***********************************需要修改********************************
+             -***********/
+  25          
+  26          void Write_DAC8552(uchar Command, uint Data);
+  27          uint Voltage_Convert(float Vref, float voltage);
+  28          
+  29          void main(void)
+  30          {
+  31   1              Write_DAC8552(0x30, Voltage_Convert(5.0,2));            //Write channel A buffer (0x30)
+  32   1          Write_DAC8552(0x34, Voltage_Convert(5.0,3.5));      //Write channel B buffer (0x34) 
+  33   1      }
+  34          
+  35          ///*******************************************
+  36          //              函数名称：Write_DAC8552
+  37          //              功    能：选择通道，设定输出电压
+  38          //              参    数：Command -> 通道A/B，0x30=A、0x34=B   
+  39          //                Data -> 输出电压
+  40          //              返回值  ：无
+  41          //********************************************/
+  42          void Write_DAC8552(uchar Command, uint Data)
+  43          {
+  44   1              uchar i;
+  45   1      
+  46   1              DAC8552_SYNC = 1;
+  47   1              DAC8552_SYNC = 0;
+  48   1      
+  49   1              for (i=0; i<8; i++)              //Write 8 bit command 
+  50   1              {
+  51   2                      DAC8552_SCLK = 1;
+  52   2                      if (Command & 0x80)
+C51 COMPILER V9.00   DAC8552                                                               03/12/2014 21:29:26 PAGE 2   
+
+  53   2                      {
+  54   3                              DAC8552_DIN = 1;
+  55   3                      }
+  56   2                      else
+  57   2                      {
+  58   3                              DAC8552_DIN = 0;
+  59   3                      }
+  60   2                      DAC8552_SCLK = 0;
+  61   2                      Command <<= 1;
+  62   2              }
+  63   1      
+  64   1              for (i=0; i<16; i++)             //write 16 bit data
+  65   1              {
+  66   2                      DAC8552_SCLK = 1;
+  67   2                      if (Data & 0x8000)
+  68   2                      {
+  69   3                              DAC8552_DIN = 1;
+  70   3                      }
+  71   2                      else
+  72   2                      {
+  73   3                              DAC8552_DIN = 0;
+  74   3                      }
+  75   2                      DAC8552_SCLK = 0;
+  76   2                      Data <<= 1;
+  77   2              }
+  78   1              DAC8552_SYNC = 1;
+  79   1      }
+  80          
+  81          ///*******************************************
+  82          //              函数名称：Voltage_Convert
+  83          //              功    能：输入参考电压和需要输出的电压，得到DA数值
+  84          //              参    数：Vref -> 参考电压   
+  85          //                voltage -> 需要输出的电压
+  86          //              返回值  ：DA数值
+  87          //********************************************/
+  88          uint Voltage_Convert(float Vref, float voltage)
+  89          {
+  90   1              uint _D_;
+  91   1              _D_ = (uint)(65536 * voltage / Vref);
+  92   1          
+  93   1              return _D_;
+  94   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    147    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----       8
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
