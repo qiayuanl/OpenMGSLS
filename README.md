@@ -1,4 +1,6 @@
 # OpenMGSLS
+**This project was developed in high school, is very naive and low reference value, please refer to it with caution!**
+
 ![](https://ws2.sinaimg.cn/large/006tKfTcgy1ftzetf8muwj31020suqhv.jpg)
 ## Introduction
 There have many 3D printing technologies, many of them use the laser to process materials like SLS(Selective Laser Sintering). Move the laser quickly and accurately became an important thing in the 3D printing. Laser galvanometer which widely used in industrial marking has the many advan- tages such as high-speed and high-precision.So this project tries to develop a system which can use laser galvanometer in 3D printing.
